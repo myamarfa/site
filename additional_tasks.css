@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Gardens CM';
+    src: local('Stolz'),
+         url('/font/20011.woff2') format('woff2'), 
+         url('/font/20011.woff') format('woff');
+  }
+
+:target:before {
+    content: "";
+    display: block;
+    height: 80px; /* высота заголовка */
+    margin: -80px 0 0; /* компенсация отступа */
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gardens CM';
+}
+
+#main_logo {
+    width: 105px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13,127,140);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    background-color: rgb(13,127,140);
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(32,36,57);
+}
+
+nav a:hover {
+    background-color: rgb(211,79,18);
+}
+
+.active_nav {
+    background-color: rgb(211,79,18);
+}
+
+#tg_logo {
+    width: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#vk_logo {
+    width: 17px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#passport {
+    margin: 50px;
+}
+
+#changing_data {
+    border: none;
+    font-family: 'Gardens CM';
+    padding: 0;
+}
+
+#changing_data a {
+    text-decoration: none;
+    background-color: rgb(32,36,57);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(237,105,42);
+}
+
+#changing_data a:hover {
+    color:  rgb(32,36,57);
+    background-color: rgb(237,105,42);
+    
+}
+
+#dom {
+    margin: 50px;
+    
+}
+
+#dom_reading {
+    border: none;
+    font-family: 'Gardens CM';
+    padding: 0;
+}
+
+#dom_reading a {
+    text-decoration: none;
+    background-color: rgb(32,36,57);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(237,105,42);
+}
+
+#dom_reading a:hover {
+    color:  rgb(32,36,57);
+    background-color: rgb(237,105,42);
+}
+
+#task1, #task2 {
+    margin: 50px;
+}
+
+#task_1 {
+    border: none;
+    font-family: 'Gardens CM';
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+#task_1 a {
+    text-decoration: none;
+    background-color: rgb(32,36,57);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(237,105,42);
+}
+
+#task_1 a:hover {
+    color:  rgb(32,36,57);
+    background-color: rgb(237,105,42);
+}
+
+
+#task_2 {
+    border: none;
+    font-family: 'Gardens CM';
+    padding: 0;
+}
+
+#task_2 a {
+    text-decoration: none;
+    background-color: rgb(32,36,57);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(237,105,42);
+}
+
+#task_2 a:hover {
+    color:  rgb(32,36,57);
+    background-color: rgb(237,105,42);
+}
+
+footer {
+    margin-top: 100px;
+    padding: 25px 50px;
+    background-color: rgb(32,36,57);
+    color: rgb(243,244,247);
+}
+
+footer #contacts {
+    margin-left: 750px;
+    margin-top: -70px;
+    margin-bottom: -10px;
+}
