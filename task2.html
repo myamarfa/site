@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+    <h3 id="task" align="center">1015. Дано вещественное число A.
+        Вычислить х = a**2+4+5  при а < 62; в противном случае x = 1/(a**2) + 4a + 5
+        Отправить все на сервер.
+    </h3>
+    <form action="https://www.yandex.ru/search?" id="form_task" name="form_task" target="_blank">
+        <input name="q" value="search" hidden>
+        Условие:
+        <br><textarea name="task" id="task" cols="100" rows="5">1015. 
+Дано вещественное число A. Вычислить х = a**2+4+5  при а < 62; в противном случае x = 1/(a**2) + 4a + 5 и отправить все на сервер.</textarea>
+        <br><br>
+        A: <input type="number" name="a" id="a" value="61.09">
+        <br>
+        <br><br>
+        Результат решения задачи: <input type="text" id="result" name="result" value="Нет результата">
+        <br><br>
+        Действие 1: <input type="button" value="Проверить" id="check">
+        <br>
+        Действие 2: <input type="button" value="Отправить" id="send">
+    </form>
+</body>
+</html>
+
+<style>
+    input {
+        padding: 5px;
+    }
+
+</style>
+
+<script>
+        const aInput = document.getElementById('a')
+        const result_input = document.getElementById('result')
+        const check_button = document.getElementById('check')
+        const send_button = document.getElementById('send')
+        
+
+        
+        function calculateX(a) {
+            let x;
+            if (a < 62) {
+                x = Math.pow(a,2)+4+5;
+            }
+            else {
+                x = (1/Math.pow(a, 2)) + (4*a) +5;
+            }
+             return x;
+        } 
+
+
+        check_button.addEventListener('click', () => {
+            const a =parseFloat(aInput.value);
+            const x=calculateX(a);
+            result_input.value=x;
+        })
+
+        send_button.addEventListener('click', () => {
+            document.getElementById('form_task').submit();
+        })
+
+</script>
