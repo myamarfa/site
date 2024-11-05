@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = 'ru', 'eng'>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Решение алгоритмической задачи</title>
+    </head>
+
+    <body>
+        <h3 id="task" align="center">1015. Дано вещественное число A. Вычислить х = a**2+4+5  при а < 62; <br>
+            в противном случае x = 1/(a**2) + 4a + 5</h3>
+            <p>Значение A: <span id="A">61.5</span></p>
+
+            <p id="check">Посмотреть</p>
+            <p>Результат: <span id="result1"></span></p>
+            
+    </body>
+
+
+    <style>
+        body {
+            margin-left: 50px;
+        }
+
+    </style>
+
+    <script>
+        const a = parseFloat(document.getElementById('A').innerText)
+        const result_button = document.getElementById('check')
+        
+        function calculateX(a) {
+            let x;
+            if (a < 62) {
+                x = Math.pow(a,2)+4+5;
+            }
+            else {
+                x = (1/Math.pow(a, 2)) + (4*a) +5;
+            }
+             return x;
+        } 
+
+        result_button.addEventListener('click', () => {
+            const x = calculateX(a);
+            document.getElementById('result1').innerText = x;   
+        })
+    </script>
