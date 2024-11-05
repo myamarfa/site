@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Gardens CM';
+    src: local('Stolz'),
+         url('/font/20011.woff2') format('woff2'), 
+         url('/font/20011.woff') format('woff');
+  }
+
+:target:before {
+    content: "";
+    display: block;
+    height: 80px; /* высота заголовка */
+    margin: -80px 0 0; /* компенсация отступа */
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gardens CM';
+}
+
+#main_logo {
+    width: 105px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13,127,140);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    background-color: rgb(13,127,140);
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(32,36,57);
+}
+
+nav a:hover {
+    background-color: rgb(211,79,18);
+}
+
+.active_nav {
+    background-color: rgb(211,79,18);
+}
+
+#tg_logo {
+    width: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#vk_logo {
+    width: 17px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    background-position-y: 92px;
+    background-position-x: -6px;
+    background-image: url('pics/passport_example.png');
+    background-repeat: no-repeat;
+    font-family: 'Gardens CM';
+    font-size: 13px;
+}
+
+.block1 {
+    margin-top: 110px;
+    margin-left: 100px; 
+}
+.block2 {
+    margin-left: 80px;
+    margin-top: 55px;
+    font-size: 90%;
+}
+.block3 {
+    margin-left: 290px;
+    margin-top: -12px;
+}
+#surname{
+    margin-top: 190px;
+    margin-left: 185px;
+}
+#name {
+        margin-top: 32px;
+        margin-left: 170px;
+}
+#patronic {
+    margin-top: 8px;
+    margin-left: 185px;
+}
+.sex {
+    margin-top: 10px;
+    margin-left: 170px;
+}
+#date_of_birth {
+    margin-top: -14px;
+    margin-left: 250px;
+}
+.city {
+    margin-top: 8px;
+    margin-left: 185px;
+}
+
+.photo {
+    margin-top: -100px;
+    margin-left: -10px;
+}
+.block4 {
+    writing-mode: vertical-lr;
+    margin-top: -450px;
+    margin-left: 400px;
+}
+.block5 {
+    writing-mode: vertical-lr;
+    margin-top: 225px;
+    margin-left: 400px;
+}
+.button_to_change {
+    margin-left: 450px;
+    margin-top: 100px;
+    font-family: 'Gardens CM';
+}
+#cyril_to_latin {
+    padding: 6px 18px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(32,36,57);
+    color: rgb(237,105,42);
+}
+#cyril_to_latin:hover {
+    background-color: rgb(9, 10, 15);
+    color: rgb(243,244,247);
+}
+
+footer {
+    margin-top: 100px;
+    padding: 25px 50px;
+    background-color: rgb(32,36,57);
+    color: rgb(243,244,247);
+}
+
+footer #contacts {
+    margin-left: 750px;
+    margin-top: -75px;
+}
+
+
