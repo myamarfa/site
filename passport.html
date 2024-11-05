@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = 'ru', 'eng'>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Изменяем кириллицу на латиницу по клику</title>
+        <link href="passport.css" rel="stylesheet" type="text/css">
+    </head>
+    <body> 
+            <header>
+            
+                <nav>
+                    <ul>
+                        <li><a href="index.html" target="_self" ><img src="/pics/logo.png" alt="Главное меню" id="main_logo"></a></li>
+                        <li><a href="tariffs.html">Тарифы</a></li>
+                        <li><a href="clubs.html">Клубы</a></li>
+                        <li><a href="equipment.html">Тренажеры</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="additional_tasks.html" class='active_nav'>Доп. задания</a></li>
+                        <li><a href="https://t.me/ddxfitness_official" target="_blank"><img src="/pics/tglogo.png" alt="Телеграм" id="tg_logo"></a></li>
+                        <li><a href="https://vk.com/ddxfitness" target="_blank"><img src="/pics/vklogo.png" alt="ВК" id="vk_logo"></a></li>
+                    </ul>
+                </nav>
+                </header>
+                <main>
+        <div class="block1">
+            УМВД РОССИИ ПО ГОР. НИЖНИЙ НОВГОРОД
+        </div>
+        <div class="block2">
+            10.11.2019
+        </div>
+        <div class="block3">
+            010-101
+        </div>
+        <div id="surname">
+            КАРПОВА
+        </div>
+        <div id="name">
+            МАРИЯ
+        </div>
+        <div id="patronic">
+            ВАДИМОВНА
+        </div>
+        <div class="sex">
+            ЖЕН.
+        </div>
+        <div id="date_of_birth">
+            03.11.2005
+        </div>
+        <div class="city">ГОР. НИЖНИЙ НОВГОРОД</div>
+        <div class="photo"><img src = 'pics/for_passport.jpg' width="150px"></img></div>
+        <div class="block4">03 11 200503</div>
+        <div class="block5">03 11 200503</div>
+        <div class="button_to_change">
+            <button id="cyril_to_latin">Изменение данных</button></div>
+    </div>
+</main>
+<footer>
+    <h4>Есть вопросы?</h4>
+        <p>Напишите или позвоните нам!</p>
+    <p id="contacts">номер: <a href="tel+7(917)093-97-15">+7(918)104-08-16</a>
+        <br>
+        <br>
+        почта: <a href = ‘mailto:rsanisimova@hse.edu.ru’>random_gmail@gmail.com</a> 
+        <br>
+    </p>
+</footer>
+</body>
+    
+
+<script>
+    const node_cyril_to_latin = document.getElementById('cyril_to_latin');
+
+function edit_passport() {
+    if (document.getElementById('surname').innerText === 'КАРПОВА') {
+        document.getElementById('surname').innerText = 'KARPOVA';
+        document.getElementById('name').innerText = 'MARIA';
+        document.getElementById('patronic').innerText = 'VADIMOVNA';
+        document.getElementById('date_of_birth').innerText = 'November 3rd 2005';
+    } else if (document.getElementById('surname').innerText === 'KARPOVA') {
+        document.getElementById('surname').innerText = 'КАРПОВА';
+        document.getElementById('name').innerText = 'МАРИЯ';
+        document.getElementById('patronic').innerText = 'ВАДИМОВНА';
+        document.getElementById('date_of_birth').innerText = '03.11.2005';
+    }
+}
+
+node_cyril_to_latin.addEventListener('click', edit_passport);
+</script>
